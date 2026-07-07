@@ -215,7 +215,7 @@ export async function renderResultCard(d: CardData): Promise<Blob | null> {
   ctx.font = `500 26px ${SANS}`;
   ctx.textAlign = 'center';
   ctx.fillText(
-    d.lang === 'zh' ? '在 fuck-claude.vercel.app 测测你的' : 'Measure yours at fuck-claude.vercel.app',
+    d.lang === 'zh' ? '在 claude.clawpost.me 测测你的' : 'Measure yours at claude.clawpost.me',
     SIZE / 2,
     SIZE - 68,
   );
