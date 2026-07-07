@@ -1,0 +1,134 @@
+---
+/**
+ * EasyRouter sponsor promotion card.
+ * Serves as a beautifully designed ad banner in place of the old Chinese models list.
+ */
+import { useTranslations, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const isZh = lang === 'zh';
+const title = isZh ? '企业级企业级大模型中转 · EasyRouter' : 'Enterprise-grade AI gateway · EasyRouter';
+const slogan = isZh ? '基于企业级云原生架构，为您提供可追溯、零延迟、永久合规的模型访问层。' : 'Built on enterprise-grade cloud-native architecture, providing you with a traceable, zero-latency, and permanently compliant model access layer.';
+const ctaText = isZh ? '立即体验' : 'Try EasyRouter';
+---
+
+<section class="easyrouter-banner" aria-label="EasyRouter Sponsored Ad">
+  <div class="easyrouter-card">
+    <div class="easyrouter-logo-wrap">
+      <img src="/easyrouter-logo.png" alt="EasyRouter Logo" class="easyrouter-logo" />
+    </div>
+    <div class="easyrouter-content">
+      <h3 class="easyrouter-title">{title}</h3>
+      <p class="easyrouter-desc">{slogan}</p>
+    </div>
+    <a href="https://easyrouter.io/" target="_blank" rel="noopener noreferrer" class="easyrouter-cta">
+      {ctaText}
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14" />
+        <path d="m13 6 6 6-6 6" />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<style>
+  .easyrouter-banner {
+    margin: 32px 0 16px;
+  }
+  .easyrouter-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 30px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, #ffffff 0%, #faf8f2 100%);
+    border: 1px solid color-mix(in srgb, var(--accent) 15%, var(--border));
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .easyrouter-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 36px rgba(217, 119, 87, 0.08);
+  }
+  .easyrouter-logo-wrap {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .easyrouter-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .easyrouter-content {
+    flex: 1 1 400px;
+  }
+  .easyrouter-title {
+    margin: 0 0 6px;
+    font-size: 1.15rem;
+    font-weight: 750;
+    color: var(--text);
+  }
+  .easyrouter-desc {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .easyrouter-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.12s;
+    box-shadow: var(--shadow-sm);
+  }
+  .easyrouter-cta:hover {
+    text-decoration: none;
+    background: var(--accent-strong);
+    transform: translateY(-1px);
+  }
+  .easyrouter-cta svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.2s;
+  }
+  .easyrouter-cta:hover svg {
+    transform: translateX(2px);
+  }
+
+  @media (max-width: 640px) {
+    .easyrouter-card {
+      padding: 20px;
+      gap: 16px;
+    }
+    .easyrouter-content {
+      flex-basis: 100%;
+    }
+    .easyrouter-cta {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

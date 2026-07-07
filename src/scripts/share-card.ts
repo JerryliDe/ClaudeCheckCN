@@ -131,7 +131,7 @@ export async function renderResultCard(d: CardData): Promise<Blob | null> {
   ctx.textAlign = 'right';
   ctx.font = `500 24px ${SANS}`;
   ctx.fillStyle = C.muted2;
-  ctx.fillText('fuck-claude.vercel.app', SIZE - 80, headY + 1);
+  ctx.fillText('claude.clawpost.me', SIZE - 80, headY + 1);
 
   // Title.
   ctx.textAlign = 'center';

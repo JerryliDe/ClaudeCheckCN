@@ -13,11 +13,11 @@ export const defaultLang: Lang = 'en';
 
 export const ui = {
   en: {
-    'meta.title': 'Fuck Claude | Are You a Claude "China User"?',
+    'meta.title': 'Claude Checker | Are You a Claude "China User"?',
     'meta.description':
       'One-click check of your browser timezone, language, Chinese fonts and locale to see if Claude Code would flag you as a China user. 100% local, nothing uploaded.',
 
-    'nav.title': 'Fuck Claude',
+    'nav.title': 'Claude Checker',
     'credit': 'Built with Claude Fable 5',
 
     'hero.title': 'Are you a Claude “China user”?',
@@ -96,11 +96,11 @@ export const ui = {
       'Switch your OS timezone away from China zones such as Asia/Shanghai, move zh-CN off the top of your browser language list, and avoid routing Claude Code through proxies whose hostnames contain flagged domains or AI-lab keywords.',
     'faq.q4': 'Is any data uploaded?',
     'faq.a4':
-      'No. Every check runs locally in your browser and none of the detected signals are ever sent anywhere. The site only loads standard Google Analytics for anonymous page-view stats.',
+      'No. Every check runs locally in your browser and none of the detected signals are ever sent anywhere.',
 
     'privacy.title': 'Privacy',
     'privacy.body':
-      'Every check runs locally in your browser — your scan results never leave your device. The site only loads Google Analytics for anonymous page-view stats; none of the detected signals are ever sent.',
+      'Every check runs locally in your browser — your scan results never leave your device. No analytics trackers or telemetry scripts are loaded; none of your detected signals are ever sent anywhere.',
 
     'social.x': 'X (Twitter)',
     'social.xiaohongshu': 'Xiaohongshu (RED)',
@@ -112,7 +112,7 @@ export const ui = {
       'For reference only, based on public reverse-engineering reports. Not an official statement or advice.',
     'footer.license':
       'Open sourced under the MIT License — redistributions must keep the original project notice.',
-    'footer.repo': 'Original project',
+    'footer.repo': 'Original Project',
 
     'share.label': 'Share your result',
     'share.native': 'Share',
@@ -142,11 +142,11 @@ export const ui = {
   },
 
   zh: {
-    'meta.title': 'Fuck Claude ｜ 你是「Claude 中国用户」吗',
+    'meta.title': 'Claude Checker ｜ 你是「Claude 中国用户」吗',
     'meta.description':
       '一键检测浏览器时区、语言、中文字体与 locale 等信号,评估你是否会被 Claude Code 判定为中国用户并有封号风险。纯本地运行,零数据上传。',
 
-    'nav.title': 'Fuck Claude',
+    'nav.title': 'Claude Checker',
     'credit': '此网站使用 Claude Fable 5 开发',
 
     'hero.title': '你是「Claude 中国用户」吗',
@@ -221,11 +221,11 @@ export const ui = {
       '把系统时区改出 Asia/Shanghai 等中国时区,把 zh-CN 从浏览器语言列表首位移除,并避免让 Claude Code 走 hostname 含敏感域名 / AI 实验室关键词的中转。',
     'faq.q4': '会上传我的数据吗?',
     'faq.a4':
-      '不会。所有检测都在浏览器本地完成,检测到的任何信号都不会被发送。网站仅加载 Google Analytics 统计匿名访问量。',
+      '不会。所有检测都在浏览器本地完成，检测到的任何信号都不会被发送。本站不加载任何统计或追踪脚本，保持 100% 纯净与匿名。',
 
     'privacy.title': '隐私说明',
     'privacy.body':
-      '所有检测都在你的浏览器本地完成,扫描结果不会离开你的设备。网站仅加载 Google Analytics 统计匿名页面访问量,检测到的信号不会被发送。',
+      '所有检测都在你的浏览器本地完成，扫描结果不会离开你的设备。本站没有任何统计埋点或追踪脚本，检测到的任何信号都不会被发送。',
 
     'social.x': 'X(推特)',
     'social.xiaohongshu': '小红书',
